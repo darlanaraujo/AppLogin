@@ -1,6 +1,7 @@
 package com.darlanaraujo.projetofirebase.view.formcadastro
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.inputmethodservice.InputMethodService
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.darlanaraujo.projetofirebase.R
 import com.darlanaraujo.projetofirebase.databinding.ActivityFormCadastroBinding
+import com.darlanaraujo.projetofirebase.view.formlogin.FormLogin
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
@@ -22,7 +24,7 @@ class FormCadastro : AppCompatActivity() {
 //    Variável que elimina o uso do findViewById
     private lateinit var binding: ActivityFormCadastroBinding
 
-//    Variável que faz a conexão com a instacia do backend do firebase
+//    Variável que faz a conexão e recupera a instacia do backend do firebase
     private val auth = FirebaseAuth.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,6 +70,11 @@ class FormCadastro : AppCompatActivity() {
                     snackbar.show()
                 }
             }
+        }
+
+        binding.txtVoltarLogin.setOnClickListener {
+            val intent = Intent(this, FormLogin::class.java)
+            startActivity(intent)
         }
     }
     private fun View.fecharteclado() {
