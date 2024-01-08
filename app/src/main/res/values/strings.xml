@@ -7,6 +7,10 @@
     <string name="texto_botao_cadastrar">CADASTRAR</string>
     <string name="texto_botao_logar">LOGAR</string>
     <string name="texto_botao_logoff">LOGOFF</string>
+    <string name="texto_botao_salvar">SALVAR</string>
+    <string name="texto_botao_editar">EDITAR</string>
+    <string name="texto_botao_deletar">DELETAR</string>
+    <string name="texto_botao_ler">LER</string>
     <string name="msg_campo_vazio">Preencha todos os campos!</string>
     <string name="msg_cadastro_sucesso">Cadastro realizado com sucesso!</string>
     <string name="msg_erro_senha">Erro! Senha com menos de 6 caracteres.</string>
@@ -18,4 +22,5 @@
     <string name="msg_erro_login">Erro ao logar usuário</string>
     <string name="texto_nao_tem_cadastro">Não tem Cadastro? Clique aqui!</string>
     <string name="texto_voltar_login">Já é cadastrado? Clique aqui!</string>
+    <string name="txt_resultado">Resutados:</string>
 </resources>
